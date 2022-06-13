@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+p a{
+    display: inline;
+}
+
+img, picture, video, iframe, figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+    content: "";
+    content: none;
+}
+  
+::selection{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+table, tr, td{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 100%;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    background-color: #dedede;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+th, td {
+    padding: 20px;
+}
+
+.tabla{
+    background-color: rgb(250, 250, 250);
+    width: 60%;
+    margin: auto;
+    box-shadow: 10px 10px 0px #bdbdbd;
+    border: 2px solid #282828;
+    text-align: center;
+}
+
+.input{
+    /* background-color: red; */
+    margin: 0rem 1rem;
+    border: 1px solid #797979;
+    border-radius: 5px;
+    width: 30%;
+    padding: 0.3rem 1rem;
+}
+
+.precio{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias{
+    color: white;
+    background-color: #282828;
+    padding: 2rem;
+}
+
+.iva{
+    padding: 1rem 1.5rem;
+    /* background-color: lightblue; */
+    margin: 0 1rem;
+}
+
+.envio{
+    padding: 1rem 1.5rem;
+    /* background-color: lightblue; */
+    margin: 0 1rem;
+}
+
+.total{
+    padding: 1rem 1.5rem;
+    /* background-color: lightblue; */
+    margin: 0 1rem;
+}
+
+.final{
+    /* background-color: blue; */
+    font-weight: 800;
+    font-size: 1.2em;
+    color: rgb(255, 84, 42)
+}
+
+.boton{
+    margin: 1rem auto 20rem;
+    border-radius: 5px;
+    padding: 0.7rem 1.2rem;
+    background-color: rgb(255, 84, 42);
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.boton:hover{
+    background-color: #282828;
+} 
+
+.linea{
+    background-color: #dedede;
+}
+
+
+@media screen and (max-width: 1600px){
+    .tabla{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .tabla{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .tabla{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .tabla{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .tabla{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .tabla{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .tabla{
+        font-size: 0.8em;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .tabla{
+        font-size: 0.5em;
+    }
+    th, td {
+        padding: 10px;
+    }
+    .input{
+        margin: 0rem 0.2rem;
+        width: 50%;
+        padding: 0.3rem 0.5rem;
+    }
+    .iva{
+        padding: 0rem 0rem;
+        /* background-color: lightblue; */
+        margin: 0 0rem;
+    }
+    .envio{
+        padding: 0rem 0rem;
+        margin: 0 0rem;
+    }
+    .total{
+        padding: 0rem 0rem;
+        margin: 0 0rem;
+    }
+    .final{
+        font-size: 1em;
+    }
+}
